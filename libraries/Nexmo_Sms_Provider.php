@@ -9,7 +9,7 @@
 
 define('NX_SERVER', 'http://rest.nexmo.com/sms/json');
 
-class Nexmo_SMS_Core {
+class Nexmo_Sms_Provider implements Sms_Provider_Core {
 
 	/**
 	 * Property stores most recent unparsed Nexmo response.
@@ -72,7 +72,7 @@ class Nexmo_SMS_Core {
 	 * @param string $from Sender of the SMS
 	 * @param string $message Message to be sent to the recipient
 	 */
-	public function send($to, $from, $message)
+	public function send($to = NULL, $from  = NULL, $message = NULL)
 	{
 		if ( !is_numeric($from) ) 
 			$from = utf8_encode( $from ); //Must be UTF-8 Encoded if not a continuous number
