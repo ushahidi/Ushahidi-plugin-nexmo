@@ -28,6 +28,10 @@ class Nexmo_Model extends ORM {
 					->add_rules('nexmo_api_secret', 'required')
 					->add_rules('nexmo_api_key', 'required');
 		
+		if ( ! empty($array->nexmo_phone_no))
+		{
+			$array->add_rules('nexmo_phone_no', 'length[3, 25]');
+		}
 		// Pass validation to parent and return
 		return parent::validate($array, $save);
 	}

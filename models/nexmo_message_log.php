@@ -12,5 +12,25 @@ class Nexmo_Message_Log_Model extends ORM {
 	 * @var string
 	 */
 	protected $table_name = 'nexmo_message_log';
+
+	/**
+	 * Validates and optionally saves a message log record from an array
+	 *
+	 * @param array $array Data to be validated and optionally saved
+	 * @param bool $save Creates the record in the DB when TRUE
+	 * @return bool 
+	 */
+	public function validate(array & $array, $save = FALSE)
+	{
+		// Validation rules for a log entry
+		$array = Validation::factory($array)
+					->pre_filter('trim')
+					->add_rules('message_id', 'required')
+					->add_rules('message_sender', 'required')
+					->add_rules('message_type', 'required', 'in_array[0,1]');
+		
+		// Pass validation to parent and return
+		return parent::validate($array, $save);
+	}
 }
 ?>

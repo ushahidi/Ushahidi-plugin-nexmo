@@ -79,8 +79,9 @@ class Nexmo_Controller extends Template_Controller {
 		// Get the received data
 		$data = array_merge($_GET, $_POST);
 		
-		// Verify the API key
-		if ( ! empty($data['key']) AND Nexmo_Model::is_valid_api_key($data['key'], 'inbound_message_key'))
+		// Verify the API key and incoming messageId parameters
+		if ( ! empty($data['key']) AND ! empty($data['messageId']) 
+			AND Nexmo_Model::is_valid_api_key($data['key'], 'inbound_message_key'))
 		{
 			// Extract fields from the submitted data
 			$log_data = array(

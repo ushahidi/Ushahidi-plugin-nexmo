@@ -22,15 +22,11 @@
 				<?php print form::password('nexmo_api_secret', $form['nexmo_api_secret'], ' class="text title_2"'); ?>
 			</div>
 			
-			<?php
-			/**
-			 * <div class="row">
-			 * <h4><?php echo Kohana::lang('nexmo.phone_number');?>:</h4>
-			 *	<?php print form::input('nexmo_phone_no', $form['nexmo_phone_no'], ' class="text title_2"'); ?>
-			 * </div>
-			 */
-			?>
-			
+			<div class="row">
+				<h4><?php echo Kohana::lang('nexmo.phone_number');?>:</h4>
+				<?php print form::input('nexmo_phone_no', $form['nexmo_phone_no'], ' class="text title_2"'); ?>
+			 </div>
+			 
 		</td>
 	</tr>
 	<tr>
