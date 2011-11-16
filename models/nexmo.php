@@ -2,8 +2,10 @@
 /**
  * Model for the nexmo settings table
  *
- * @author Nexmo
- * @copyright - Nexmo http://nexmo.com
+ * @author     Emmanuel Kala <emkala(at)gmail.com>
+ * @package    Ushahidi - http://github.com/ushahidi/Ushahidi_Web
+ * @subpackage NexmoSMS
+ * @category   Plugins
  */
 class Nexmo_Model extends ORM {
 	

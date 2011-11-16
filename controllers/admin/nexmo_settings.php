@@ -2,8 +2,10 @@
 /**
  * Settings controller for the nexmo plugin
  *
- * @author Nexmo - http://nexmo.com
- * @copyright Nexmo - http://nexmo.com
+ * @author     Emmanuel Kala <emkala(at)gmail.com>
+ * @package    Ushahidi - http://github.com/ushahidi/Ushahidi_Web
+ * @subpackage NexmoSMS
+ * @category   Plugins
  */
 class Nexmo_Settings_Controller extends Admin_Controller {
 	

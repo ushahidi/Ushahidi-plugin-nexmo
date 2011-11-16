@@ -1,8 +1,11 @@
 <?php defined('SYSPATH') or die('No direct script access');
 /**
  * Nexmo SMS plugin installer
- * @author Nexmo - http://nexmo.com
- * @copyright 
+ *
+ * @author     Emmanuel Kala <emkala(at)gmail.com>
+ * @package    Ushahidi - http://github.com/ushahidi/Ushahidi_Web
+ * @subpackage NexmoSMS
+ * @category   Plugins
  */
 class Nexmo_Install {
 	/**

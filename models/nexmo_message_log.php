@@ -2,8 +2,10 @@
 /**
  * Model for the Nexmo Message Log table
  *
- * @author Nexmo - http://nexmo.com
- * @copyright Nexmo - http://nexmo.com
+ * @author     Emmanuel Kala <emkala(at)gmail.com>
+ * @package    Ushahidi - http://github.com/ushahidi/Ushahidi_Web
+ * @subpackage NexmoSMS
+ * @category   Plugins
  */
 class Nexmo_Message_Log_Model extends ORM {
 	

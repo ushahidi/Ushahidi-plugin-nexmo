@@ -3,9 +3,10 @@
  * Nexmo controller that provides the callback URLs for delivery
  * receipt messages and MO (inbonud) messages
  *
- * @author Nexmo
- * @copyright Nexmo - http://www.nexmo.com
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License (LGPL) 
+ * @author     Emmanuel Kala <emkala(at)gmail.com>
+ * @package    Ushahidi - http://github.com/ushahidi/Ushahidi_Web
+ * @subpackage NexmoSMS
+ * @category   Plugins
  */
 class Nexmo_Controller extends Template_Controller {
 	
