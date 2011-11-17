@@ -93,7 +93,7 @@ class Nexmo_Settings_Controller extends Admin_Controller {
 		$this->auto_render = FALSE;
 		
 		// Initialize the nexmo library
-		$nexmo_sms = new Nexmo_SMS();
+		$nexmo_sms = new Nexmo_Sms_Provider();
 		
 		header("Content-type: application/json; charset=utf-8");
 		print $nexmo_sms->get_account_balance();
